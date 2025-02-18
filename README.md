@@ -1,0 +1,1 @@
+![](jwmrc_white.jpg)
