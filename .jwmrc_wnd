@@ -3,16 +3,10 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="utilities-terminal" label="Terminal">xterm</Program>
-        <Menu icon="folder" label="Applications">
-            <Program icon="sound" label="Audacious">audacious</Program>
-            <Program icon="calc" label="Calculator">xcalc</Program>
-        <Program icon="utilities-terminal" label="xfce-term">xfce-terminal</Program>
-        <Program icon="utilities-terminal" label="mousepad">mousepad</Program>
-            <Program icon="web-browser" label="Firefox">firefox</Program>
-            <Program icon="image" label="Gimp">gimp</Program>
-            <Program icon="email" label="Mail">claws-mail</Program>
-            <Program icon="system-file-manager" label="ROX">rox ~</Program>
+        <Program icon="terminal" label="xfce4-term">xfce4-terminal</Program>
+        <Program icon="utilities-terminal" label="xterm">xterm</Program>
+        <Separator/>
+        <!--<Menu icon="folder" label="Applications">
         </Menu>
         <Menu icon="folder" label="Utilities">
             <Program icon="font" label="Fonts">xfontsel</Program>
@@ -23,10 +17,14 @@
                 xwininfo | xmessage -file -
             </Program>
         </Menu>
-        <Separator/>
-        <Program icon="lock" label="Lock">
+        <Separator/>-->
+            <Program icon="system-file-manager" label="File manager">pcmanfm</Program>
+            <Program icon="accessories-text-editor" label="Text editor">mousepad</Program>
+            <Program icon="image" label="Gimp">gimp</Program>
+        <Program icon="calc" label="Calculator">xcalc</Program>
+        <!--<Program icon="lock" label="Lock">
            xscreensaver-command -lock
-        </Program>
+        </Program>-->
         <Separator/>
         <Restart label="Restart" icon="reload"/>
         <Exit label="Exit" confirm="true" icon="exit"/>
@@ -49,17 +47,18 @@
     <!-- Tray at the bottom. -->
     <Tray x="0" y="1" autohide="off" delay="1000">
 
-        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton label="Start">root:1</TrayButton>
         <Spacer width="2"/>
-        <TrayButton label="_">showdesktop</TrayButton>
+        <!--<TrayButton label="_">showdesktop</TrayButton>
         <Spacer width="2"/>
 
-        <Pager labeled="true"/>
+        <Pager labeled="true"/>-->
+        <TaskList maxwidth="160"/>
 
-        <TaskList maxwidth="256"/>
+        <!--<Swallow width="32" height="32" name="xclock">xclock</Swallow>-->
 
         <Dock/>
-        <Clock format="%l:%M %p" color="white"><Button mask="123">exec:xclock</Button></Clock>
+        <Clock format="%Y-%m-%d"></Clock>
 
     </Tray>
 
