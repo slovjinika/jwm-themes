@@ -1,1 +1,2 @@
-![](jwmrc_white.jpg)
+![white](jwmrc_white.jpg)
+![wnd](jwmrc_wnd.jpg)
