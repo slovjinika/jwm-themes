@@ -69,20 +69,17 @@
         <Font>Unifont-12</Font>
         <Width>8</Width>
         <Corner>0</Corner>
-        <Foreground>lightgray</Foreground>
+        <Foreground>black</Foreground>
         <Background>gray</Background>
-        <Opacity>0.1</Opacity>
         <Active>
             <Foreground>black</Foreground>
             <Background>gray</Background>
-            <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
     <TrayStyle decorations="motif">
         <Font>Unifont-12</Font>
         <Background>gray</Background>
         <Foreground>black</Foreground>
-        <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
       <Font>Unifont-12</Font>
@@ -112,9 +109,8 @@
         <Background>gray</Background>
         <Active>
             <Foreground>white</Foreground>
-            <Background>#4e3131</Background>
+            <Background>darkblue</Background>
         </Active>
-        <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>Unifont-12</Font>
