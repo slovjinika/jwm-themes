@@ -105,7 +105,7 @@
     <MenuStyle decorations="flat">
         <Font>Unifont-12</Font>
         <Foreground>#e5eaf0</Foreground>
-        <Background>#2e3440</Background>
+        <Background>#3b4252</Background>
         <Outline>#1d2226</Outline>
         <Active>
             <Foreground>white</Foreground>
