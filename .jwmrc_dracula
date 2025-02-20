@@ -45,7 +45,7 @@
     </Group>
 
     <!-- Tray at the bottom. -->
-    <Tray x="0" y="1" autohide="off" delay="1000">
+    <Tray x="0" y="0" autohide="off" delay="1000">
 
         <TrayButton label="Start">root:1</TrayButton>
         <Spacer width="2"/>
@@ -95,7 +95,7 @@
     </TaskListStyle>
     <PagerStyle>
         <Foreground>#282a36</Foreground> 
-        <Background>#282a36</Background> 
+        <Background>#1f1f29</Background> 
         <Text>#b5b5bd</Text> 
         <Active>
         	<Foreground>#664d91</Foreground>
