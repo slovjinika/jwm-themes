@@ -21,7 +21,15 @@
             <Program icon="system-file-manager" label="File manager">pcmanfm</Program>
             <Program icon="accessories-text-editor" label="Text editor">mousepad</Program>
             <Program icon="image" label="Gimp">gimp</Program>
-        <Program icon="calc" label="Calculator">xcalc</Program>
+        <Program icon="calc" label="xcalc">xcalc -fn 6x13</Program>
+        <Program icon="xedit" label="xedit">xedit -fn -gnu-unifont-medium-r-normal-sans-16-160-75-75-c-80-iso10646-1</Program>
+        <Program icon="bitmap" label="bitmap">bitmap -fn 6x13</Program>
+        <Program icon="xgc" label="xgc">xgc -fn 6x13</Program>
+        <Separator/>
+        <Program icon="ibus" label="ibus">ibus-daemon</Program>
+        <Program icon="xpdf" label="xpdf">xpdf -font 6x13 -z 200 -geometry 600x739 -mattecolor white -title "Bible. Ostrog, 1581" "/sdcard/Books/Bible. Ostrog, 1581.pdf"</Program>
+        <Program icon="libreoffice" label="libreoffice">libreoffice "/sdcard/Books/Ostrog/2025-02-27-ps.odt"</Program>
+        <Program icon="fontforge" label="fontforge">fontforge "/root/.fonts/FedorovskUnicode.otf"</Program>
         <!--<Program icon="lock" label="Lock">
            xscreensaver-command -lock
         </Program>-->
@@ -55,6 +63,7 @@
         <Pager labeled="true"/>-->
         <TaskList labeled="1" maxwidth="0"/>
 
+        <Spacer width="4"/>
         <!--<Swallow width="32" height="32" name="xclock">xclock</Swallow>-->
 
         <Dock/>
@@ -66,62 +75,64 @@
 
     <!-- Visual Styles -->
     <WindowStyle decorations="motif">
-        <Font>Ubuntu Sans Mono-11</Font>
+      	<Font align="center">Sans-11</Font>
         <Width>7</Width>
         <Corner>0</Corner>
         <Foreground>#333333</Foreground>
-        <Background>#c0c0c0</Background>
+        <Background>Silver</Background>
         <Opacity>0.1</Opacity>
         <Active>
-            <Foreground>#000000</Foreground>
-            <Background>#c0c0c0</Background>
+            <Foreground>Black</Foreground>
+            <Background>Silver</Background>
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
 
     <TrayStyle decorations="motif">
-        <Font>Ubuntu Sans Mono-11</Font>
-        <Background>#c0c0c0</Background>
-        <Foreground>#000000</Foreground>
+      <Font>Sans-11</Font>
+        <Background>Silver</Background>
+        <Foreground>Black</Foreground>
         <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>Ubuntu Sans Mono-11</Font>
+      <Font>Sans-11</Font>
       <Active>
-        <Foreground>#000000</Foreground>
-        <Background>#ffffff</Background>
+        <Foreground>Black</Foreground>
+        <Background>Light Gray</Background>
       </Active>
       <Minimized>
-        <Foreground>#000000</Foreground>
-        <Background>#ffffff</Background>
+        <Foreground>Black</Foreground>
+        <Background>Light Gray</Background>
       </Minimized>
-      <Foreground>#000000</Foreground>
-      <Background>#c0c0c0</Background>
+      <Foreground>Black</Foreground>
+      <Background>Silver</Background>
     </TaskListStyle>
 
     <PagerStyle>
         <Foreground>#a0a0a0</Foreground>
-        <Background>#c0c0c0</Background>
-        <Text>#000000</Text>
+        <Background>Silver</Background>
+        <Text>Black</Text>
         <Active>
             <Foreground>#008080</Foreground>
             <Background>#eeeeee</Background>
         </Active>
     </PagerStyle>
+
     <MenuStyle decorations="motif">
-        <Font>Ubuntu Sans Mono-11</Font>
-        <Foreground>#000000</Foreground>
-        <Background>#c0c0c0</Background>
+      	<Font>Sans-11</Font>
+        <Foreground>Black</Foreground>
+        <Background>Silver</Background>
         <Active>
-            <Foreground>#FFFFFF</Foreground>
-            <Background>#000080</Background>
+            <Foreground>White</Foreground>
+            <Background>Navy Blue</Background>
         </Active>
         <Opacity>1.0</Opacity>
     </MenuStyle>
+
     <PopupStyle>
-        <Font>Ubuntu Sans Mono-11</Font>
-        <Foreground>#ffffff</Foreground>
-        <Background>#000000</Background>
+      	<Font>Sans-11</Font>
+        <Foreground>White</Foreground>
+        <Background>Black</Background>
     </PopupStyle>
 
     <!-- Path where icons can be found.
@@ -154,7 +165,7 @@
               contained within a Desktop tag to give a specific background
               for that desktop.
          -->
-        <Background type="solid">#c0c0c0</Background>
+        <Background type="solid">Web Gray</Background>
     </Desktops>
 
     <!-- Double click speed (in milliseconds) -->
